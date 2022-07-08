@@ -1,0 +1,15 @@
+.navbar-custom{
+    color: var(--secondary-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active-link{
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.btn-night-mode{
+    border: none;
+    outline:none;
+    background: none;
+}

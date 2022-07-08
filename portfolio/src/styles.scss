@@ -7,6 +7,12 @@ $font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
+:root{
+    --primary-color: #5F00A0;
+    --secondary-color: #545454;
+    --nav-back:#e5e5e5;
+}
+
 body{
     font-family: $font-family;
 }
