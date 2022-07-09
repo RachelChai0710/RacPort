@@ -17,6 +17,8 @@ import { AboutMeComponent } from './pages/about-me/about-me.component'
 import { ContactMeComponent } from './pages/home/contact-me/contact-me.component'
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
+import { PortfolioItemComponent } from './pages/home/portfolio/portfolio-item/portfolio-item.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     ProfileComponent,
     PortfolioComponent,
     AboutMeComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    PortfolioItemComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     MatTabsModule,
     MatGridListModule,
     FlexLayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxBootstrapIconsModule.pick(allIcons)
   ],
   providers: [],
   bootstrap: [AppComponent]

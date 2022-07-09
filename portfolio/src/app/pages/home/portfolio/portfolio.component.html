@@ -5,19 +5,37 @@
         </mat-card>
     </div>
 
+    <div class="center">
         <mat-tab-group mat-align-tabs="center" [dynamicHeight] = "true">
             <mat-tab label="All"> 
-                <ng-container *ngFor="let item of portfolio">
-                    <mat-grid-tile >
-                      {{ item.name}}
-                      {{ item.name}}
-                    </mat-grid-tile>
-                  </ng-container>
+                <div fxLayout="row wrap" >
+                    <div fxFlex="50%" *ngFor="let item of portfolio">
+                       <app-portfolio-item [item]="item"></app-portfolio-item>
+                    </div>
+                </div>
             </mat-tab>
-            <mat-tab label="Web"><p>Text</p></mat-tab>
-            <mat-tab label="Mobile App">Content 2</mat-tab>
-            <mat-tab label="Others">Content 3</mat-tab>
-        </mat-tab-group>
+            <mat-tab label="Web">
+                <div fxLayout="row wrap" >
+                <div fxFlex="50%" *ngFor="let item of webPortfolio">
+                   <app-portfolio-item [item]="item"></app-portfolio-item>
+                </div>
+            </div></mat-tab>
+            <mat-tab label="Mobile App">
+                <div fxLayout="row wrap" >
+                    <div fxFlex="50%" *ngFor="let item of appPortfolio">
+                       <app-portfolio-item [item]="item"></app-portfolio-item>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="Others">
+                <div fxLayout="row wrap" >
+                <div fxFlex="50%" *ngFor="let item of othPortfolio">
+                   <app-portfolio-item [item]="item"></app-portfolio-item>
+                </div>
+            </div></mat-tab>
+        </mat-tab-group>  
+    </div>
+    
 </div>
 
 

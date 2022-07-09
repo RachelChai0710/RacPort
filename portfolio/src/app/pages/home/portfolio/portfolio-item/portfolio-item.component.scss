@@ -1,0 +1,15 @@
+img{
+    max-width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+a{
+    color: var(--btn-unhover-color);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color);
+    text-decoration: solid;
+}

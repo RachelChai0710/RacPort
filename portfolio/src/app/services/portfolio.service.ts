@@ -3,7 +3,8 @@ import { PortfolioConstants } from '../pages/home/portfolio/portfolio.constants'
 
 export interface Portfolio{
   name: string;
-  imagePath: string;
+  imgPath: string;
+  url: string;
   type: 'APP'| 'WEB' |'OTHERS';
 }
 
