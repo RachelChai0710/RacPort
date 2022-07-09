@@ -6,6 +6,16 @@ $font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
 }
+:root{
+    --primary-color: #5F00A0;
+       --secondary-color: #545454;
+       --img-border-color: #663a82; 
+       --btn-text-color: white;
+       --btn-unhover-color:#bca0dc;
+       --semi-bold: 600;
+       --bg-color:#FFEFFF;
+       --page-bg-color:rgba(255,255,255, 0.9);
+}
 
 @media screen and (min-width: 968px) {
     :root {
@@ -16,12 +26,7 @@ $font-family: 'Poppins', sans-serif;
        --normal-font-size: 1rem;
        --small-font-size: .875rem;
        --smaller-font-size: .813rem;
-       --primary-color: #5F00A0;
-       --secondary-color: #545454;
-       --img-border-color: #663a82; 
-       --btn-text-color: white;
-       --btn-unhover-color:#bca0dc;
-       --semi-bold: 600;
+       
     }
 
 }
@@ -68,6 +73,10 @@ ul{
     outline:none;
     background: none;
     color: var(--primary-color);
+}
+
+.column{
+    margin-right: 40px;
 }
 
 

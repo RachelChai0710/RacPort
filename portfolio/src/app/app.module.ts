@@ -12,6 +12,11 @@ import { MatCardModule } from '@angular/material/card'
 import { MatTabsModule } from '@angular/material/tabs'
 import { ProfileComponent } from './pages/home/profile/profile.component'
 import { PortfolioComponent } from './pages/home/portfolio/portfolio.component'
+import { MatGridListModule } from '@angular/material/grid-list'
+import { AboutMeComponent } from './pages/about-me/about-me.component'
+import { ContactMeComponent } from './pages/home/contact-me/contact-me.component'
+import { FlexLayoutModule } from '@angular/flex-layout'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -20,7 +25,9 @@ import { PortfolioComponent } from './pages/home/portfolio/portfolio.component'
     FooterComponent,
     HomeComponent,
     ProfileComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    AboutMeComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,10 @@ import { PortfolioComponent } from './pages/home/portfolio/portfolio.component'
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatGridListModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

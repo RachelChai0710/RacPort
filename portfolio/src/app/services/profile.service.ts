@@ -7,6 +7,7 @@ export interface Profile{
   role: string;
   resumePath: string;
   resumeName: string;
+  dtl: string;
 }
 
 @Injectable({

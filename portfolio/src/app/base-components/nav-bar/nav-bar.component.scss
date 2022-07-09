@@ -7,3 +7,7 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+li.nav-item.active:hover{
+    color: var(--primary-color);
+}

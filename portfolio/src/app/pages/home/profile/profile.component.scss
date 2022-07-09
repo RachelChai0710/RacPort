@@ -1,18 +1,49 @@
+.profile{
+    margin: 30px auto 80px auto;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
 .profile-pic{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 .avatar{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: solid var(--img-border-color) 3px ;
     padding:5px;
 }
 
 .name{
-    font-size: var(--h2-font-size);
+    font-size: var(--h1-font-size);
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.role{
+    font-size: var(--h2-font-size);
+}
+
+.dtl{
+    max-width: 400px;
+}
+
+.dtl p{
+    font-size: var(--h4-font-size);
+}
+
+.btn-container{
+    max-width: 100px;
+}
+
+.btn-container.column{
+    margin: auto 0px auto 0px;
+}
+
+.btn-icon{
+    margin-bottom: 10px;
 }
 
 .mat-card-actions .btn-dnl{

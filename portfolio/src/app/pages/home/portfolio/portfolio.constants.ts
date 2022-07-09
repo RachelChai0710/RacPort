@@ -3,7 +3,7 @@ import { Portfolio, portfolioType } from 'src/app/services/portfolio.service'
 export class PortfolioConstants {
   public static portfolio: Portfolio[] = [
     {
-      name: '',
+      name: 'Golden Beach Hotel App',
       imagePath: '',
       type: portfolioType.App
     },

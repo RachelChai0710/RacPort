@@ -8,6 +8,7 @@ export class ProfileConstants {
     nickname: 'Rachel',
     role: 'Software Engineer',
     resumePath: 'assets/pdf/Chai Yee Shim - Resume.pdf',
-    resumeName: 'Chai Yee Shim - Resume.pdf'
+    resumeName: 'Chai Yee Shim - Resume.pdf',
+    dtl: 'Software Engineer with industry experience building websites and web applications. I specialize in Java and have professional experience working with JSF, Spring Framework and Angular.'
   }
 }
