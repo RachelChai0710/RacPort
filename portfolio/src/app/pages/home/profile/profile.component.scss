@@ -1,0 +1,28 @@
+.profile-pic{
+    width: 150px;
+    height: 150px;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border: solid var(--img-border-color) 3px ;
+    padding:5px;
+}
+
+.name{
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+}
+
+.mat-card-actions .btn-dnl{
+    margin-left: 5px;
+}
+
+.mat-card-actions .mat-button{
+    margin: 10px 6px 
+}
+
+mat-card-actions{
+    width: 150px;
+}

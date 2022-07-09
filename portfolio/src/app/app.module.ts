@@ -6,9 +6,12 @@ import { AppComponent } from './app.component'
 import { NavBarComponent } from './base-components/nav-bar/nav-bar.component'
 import { FooterComponent } from './base-components/footer/footer.component'
 import { HomeComponent } from './pages/home/home.component'
-import { AboutMeComponent } from './pages/about-me/about-me.component'
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
+import { MatCardModule } from '@angular/material/card'
+import { MatTabsModule } from '@angular/material/tabs'
+import { ProfileComponent } from './pages/home/profile/profile.component'
+import { PortfolioComponent } from './pages/home/portfolio/portfolio.component'
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { MatIconModule } from '@angular/material/icon'
     NavBarComponent,
     FooterComponent,
     HomeComponent,
-    AboutMeComponent
+    ProfileComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

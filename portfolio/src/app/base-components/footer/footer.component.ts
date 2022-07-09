@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { Profile, ProfileService } from 'src/app/services/profile.service'
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  copyright: string
+  profile:Profile
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor (private profileSrv: ProfileService) {
+    this.copyright = profileSrv.getProfile().name + ' © 2022. All right reserved.'
+    this.profile = profileSrv.getProfile()
   }
 
+  ngOnInit (): void {
+  }
 }

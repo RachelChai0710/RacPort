@@ -98,6 +98,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/assets/img/avatar.jpg",
               {
                 "glob": "*.svg",
                 "input": "./node_modules/bootstrap-icons/",

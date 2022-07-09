@@ -7,13 +7,68 @@ $font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-:root{
-    --primary-color: #5F00A0;
-    --secondary-color: #545454;
-    --nav-back:#e5e5e5;
+@media screen and (min-width: 968px) {
+    :root {
+       --biggest-font-size: 2.5rem;
+       --h1-font-size: 2.25rem;
+       --h2-font-size: 1.5rem;
+       --h3-font-size: 1.25rem;
+       --normal-font-size: 1rem;
+       --small-font-size: .875rem;
+       --smaller-font-size: .813rem;
+       --primary-color: #5F00A0;
+       --secondary-color: #545454;
+       --img-border-color: #663a82; 
+       --btn-text-color: white;
+       --btn-unhover-color:#bca0dc;
+       --semi-bold: 600;
+    }
+
 }
 
+/* common style */
 body{
     font-family: $font-family;
 }
+
+button{
+    background-color: var(--btn-unhover-color);
+    color: var(--btn-text-color);
+    font-weight: var(--semi-bold);
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+p{
+    font-size: var(--small-font-size);
+    color: var(--secondary-color);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-icon{
+    border: none;
+    outline:none;
+    background: none;
+    color: var(--secondary-color);
+}
+
+.btn-icon:hover{
+    border: none;
+    outline:none;
+    background: none;
+    color: var(--primary-color);
+}
+
+
 

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-custom">
+<nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom">
     <div class="container">
         <div class="navbar-header">
             <button class="navbar-toggler"
@@ -23,31 +23,32 @@
                 routerLinkActive="active-link" 
                 [routerLinkActiveOptions]="{exact: true}">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" routerLink="about" routerLinkActive="active-link">About Me</a>
             </li>
           </ul>
         </div>
-    
-        <div class="night-mode-container"  
-            *ngIf="isNight">
-            <button 
-                mat-button 
-                class = "btn-night-mode"
-                (click)="btnNightModeOnClick()">
-                <mat-icon>bedtime</mat-icon>
-            </button>
-        </div>
-    
-        <div class="day-mode-container"  
+
+        <ng-container  class="night-mode-container"  
             *ngIf="!isNight">
             <button 
                 mat-button 
-                class = "btn-night-mode"
+                class = "btn-icon"
+                (click)="btnNightModeOnClick()">
+                <mat-icon>bedtime</mat-icon>
+            </button>
+        </ng-container>
+    
+        <ng-container 
+            class="day-mode-container"  
+            *ngIf="isNight">
+            <button 
+                mat-button 
+                class = "btn-icon"
                 (click)="btnNightModeOnClick()">
                 <mat-icon>wb_sunny</mat-icon>
             </button>
-        </div>
+        </ng-container >
     </div>
 </nav>
 
