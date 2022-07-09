@@ -1,16 +1,16 @@
-import { Portfolio, portfolioType } from 'src/app/services/portfolio.service'
+import { Portfolio } from 'src/app/services/portfolio.service'
 
 export class PortfolioConstants {
   public static portfolio: Portfolio[] = [
     {
       name: 'Golden Beach Hotel App',
       imagePath: '',
-      type: portfolioType.App
+      type: 'APP'
     },
     {
       name: '',
       imagePath: '',
-      type: portfolioType.App
+      type: 'APP'
     }
   ]
 }

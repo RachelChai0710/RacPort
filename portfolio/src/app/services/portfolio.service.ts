@@ -4,10 +4,8 @@ import { PortfolioConstants } from '../pages/home/portfolio/portfolio.constants'
 export interface Portfolio{
   name: string;
   imagePath: string;
-  type: portfolioType;
+  type: 'APP'| 'WEB' |'OTHERS';
 }
-
-export enum portfolioType {'Web' = 1, 'App' = 2, "Other" = 3} 
 
 @Injectable({
   providedIn: 'root'
@@ -24,19 +22,19 @@ export class PortfolioService {
 
   getWebPortfolio ():Portfolio[] {
     return this.portfolio.filter((obj) => {
-      return obj.type === portfolioType.Web
+      return obj.type === 'WEB'
     })
   }
 
   getAppPortfolio ():Portfolio[] {
     return this.portfolio.filter((obj) => {
-      return obj.type === portfolioType.App
+      return obj.type === 'APP'
     })
   }
 
   getOthPortfolio ():Portfolio[] {
     return this.portfolio.filter((obj) => {
-      return obj.type === portfolioType.Other
+      return obj.type === 'OTHERS'
     })
   }
 }
