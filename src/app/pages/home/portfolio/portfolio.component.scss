@@ -2,3 +2,14 @@
     margin: 0px auto 80px auto;
 }
 
+/* Styles for tab labels */
+.mat-tab-label {
+    color: red;
+    font-weight: 700;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+    color: red;
+    font-weight: 700;
+}

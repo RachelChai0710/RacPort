@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
   copyright: string
   profile: Profile
   linkedInUrl: string
+
   constructor (private profileSrv: ProfileService) {
     this.copyright = profileSrv.getProfile().name + ' © 2022. All right reserved.'
     this.profile = profileSrv.getProfile()

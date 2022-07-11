@@ -1,54 +1,35 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom">
     <div class="container">
         <div class="navbar-header">
-            <button class="navbar-toggler"
+            <button class="navbar-toggler collapsed btn-icon"
                 data-toggle="collapse"
                 data-target="#mainNavBar"
-                aria-controls="navbarText" 
+                aria-controls="mainNavBar" 
                 aria-expanded="false" 
-                aria-label="Toggle navigation">
+                aria-label="Toggle navigation"
+                (click)="onClick()">
                 <mat-icon>menu</mat-icon>
-        </button>
+            </button>
             <a class="navbar-brand" routerLink="">
                 <img src="favicon.ico" width="30px" height="30px" class="d-inline-block align-top" alt="RacPort"/>
-                RacPort
+                    RacPort
             </a>
         </div>
-    
-        <div class="collapse navbar-collapse" id="mainNavBar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" 
-                routerLink="" 
-                routerLinkActive="active-link" 
-                [routerLinkActiveOptions]="{exact: true}">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" routerLink="about" routerLinkActive="active-link">About Me</a>
-            </li>
-          </ul>
-        </div>
 
-        <ng-container  class="night-mode-container"  
-            *ngIf="!isNight">
-            <button 
-                mat-button 
-                class = "btn-icon"
-                (click)="btnNightModeOnClick()">
-                <mat-icon>bedtime</mat-icon>
-            </button>
-        </ng-container>
+        <div class="collapse navbar-collapse" id="mainNavBar" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                <a class="nav-link" 
+                    routerLink="" 
+                    routerLinkActive="active-link" 
+                    [routerLinkActiveOptions]="{exact: true}">Home</a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" routerLink="about" routerLinkActive="active-link">About Me</a>
+                </li>
+            </ul>   
+        </div>
     
-        <ng-container 
-            class="day-mode-container"  
-            *ngIf="isNight">
-            <button 
-                mat-button 
-                class = "btn-icon"
-                (click)="btnNightModeOnClick()">
-                <mat-icon>wb_sunny</mat-icon>
-            </button>
-        </ng-container >
     </div>
 </nav>
 

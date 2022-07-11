@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core'
 })
 export class NavBarComponent implements OnInit {
   isNight = false
-
+  public isCollapsed = true
   ngOnInit (): void {
   }
 
   btnNightModeOnClick (): void {
     this.isNight = !this.isNight
+  }
+
+  onClick () {
+    this.isCollapsed = !this.isCollapsed
   }
 }

@@ -6,6 +6,7 @@ $font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
 }
+
 :root{
     --primary-color: #5F00A0;
        --secondary-color: #545454;
@@ -17,31 +18,96 @@ $font-family: 'Poppins', sans-serif;
        --page-bg-color:rgba(255,255,255, 0.9);
 }
 
-@media screen and (min-width: 968px) {
+/* Media Screen*/
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  { 
     :root {
-       --biggest-font-size: 2.5rem;
-       --h1-font-size: 2.25rem;
-       --h2-font-size: 1.5rem;
-       --h3-font-size: 1.25rem;
-       --h4-font-size: 1rem;
-       --normal-font-size: 1rem;
-       --small-font-size: .875rem;
-       --smaller-font-size: .813rem;
+        --biggest-font-size: 1.85rem;
+        --h1-font-size: 1.75rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --h4-font-size: .75rem;
+        --normal-font-size: .75rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --img-height:400px;
+     }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (min-width:480px)  { 
+    :root {
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.75rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --h4-font-size: .75rem;
+        --normal-font-size: .75rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --img-height:400px;
     }
 }
 
-@media screen and (min-width: 480px) {
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:641px)  { 
     :root {
-       --biggest-font-size: 2rem;
-       --h1-font-size: 1.75rem;
-       --h2-font-size: 1.25rem;
-       --h3-font-size: 1rem;
-       --h4-font-size: .75rem;
-       --normal-font-size: .75rem;
-       --small-font-size: .875rem;
-       --smaller-font-size: .813rem;
+        --biggest-font-size: 2.25rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --h4-font-size: .75rem;
+        --normal-font-size: .75rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --img-height:400px;
     }
 }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:968px)  { 
+    :root {
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --h4-font-size: 1rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --img-height:250px;
+    } 
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { 
+    :root {
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --h4-font-size: 1rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --img-height:250px;
+    } 
+}
+
+/* hi-res laptops and desktops */ 
+@media (min-width:1281px) {
+    :root {
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --h4-font-size: 1rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --img-height:280px;
+    } 
+ }
 
 /* common style */
 body{
@@ -68,6 +134,7 @@ ul{
     list-style-type: none;
 }
 
+/* class common style */
 .center{
     display: flex;
     justify-content: center;
