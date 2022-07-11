@@ -8,27 +8,27 @@
     <div class="center">
         <mat-tab-group mat-align-tabs="center" [dynamicHeight] = "true">
             <mat-tab label="All"> 
-                <div fxLayout="row wrap" >
+                <div fxLayout="row wrap" fxLayout.xs="column wrap" >
                     <div fxFlex="50%" *ngFor="let item of portfolio">
                        <app-portfolio-item [item]="item"></app-portfolio-item>
                     </div>
                 </div>
             </mat-tab>
             <mat-tab label="Web">
-                <div fxLayout="row wrap" >
+                <div fxLayout="row wrap" fxLayout.xs="column wrap">
                 <div fxFlex="50%" *ngFor="let item of webPortfolio">
                    <app-portfolio-item [item]="item"></app-portfolio-item>
                 </div>
             </div></mat-tab>
             <mat-tab label="Mobile App">
-                <div fxLayout="row wrap" >
+                <div fxLayout="row wrap" fxLayout.xs="column wrap" >
                     <div fxFlex="50%" *ngFor="let item of appPortfolio">
                        <app-portfolio-item [item]="item"></app-portfolio-item>
                     </div>
                 </div>
             </mat-tab>
             <mat-tab label="Others">
-                <div fxLayout="row wrap" >
+                <div fxLayout="row wrap" fxLayout.xs="column wrap">
                 <div fxFlex="50%" *ngFor="let item of othPortfolio">
                    <app-portfolio-item [item]="item"></app-portfolio-item>
                 </div>
