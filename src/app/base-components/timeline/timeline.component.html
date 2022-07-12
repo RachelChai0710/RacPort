@@ -1,0 +1,16 @@
+
+<p-timeline [value]="arr" layout="vertical" align="alternate" styleClass="customized-timeline">
+    <ng-template pTemplate="marker" let-item>
+        <span class="custom-marker p-shadow-2" >
+            <mat-icon class="rounded-circle icon" [style.backgroundColor]="item.color">{{item.icon}}</mat-icon>
+        </span>
+    </ng-template>
+    <ng-template pTemplate="content" let-item>
+        <p-card [header]="item.header" [subheader]="item.school">
+            <p>{{item.date}}</p>
+        </p-card>    
+        
+    </ng-template>
+</p-timeline>
+
+    

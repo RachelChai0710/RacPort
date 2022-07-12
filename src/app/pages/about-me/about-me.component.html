@@ -1,1 +1,32 @@
-<p>about-me works!</p>
+<div class="about-me-container">
+    <div class="center">
+        <mat-card class="column">
+            <mat-card-title align="center"><h1>About Me</h1></mat-card-title>
+        </mat-card>
+    </div>
+
+    <div fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.lt-md="column wrap" fxLayoutGap="20px" fxLayoutAlign="center center">
+        <mat-card fxFlex="40%" align="center">
+            <mat-card-content class="dtl">
+                <p>
+                  {{this.aboutMe.dtl}}
+                </p>
+                <div flexLayout="row wrap" flexLayoutGap="10px">
+                    <div fxFlex class="yoe-container" flexLayout="row wrap" flexLayoutGap="10px">
+                        <h1 fxFlex="40%">0{{this.aboutMe.yoe}}</h1>
+                        <p >Years <br>of Experience</p>
+                    </div>
+                    <mat-card-actions fxFlex>
+                        <button mat-button (click)="dnlFileOnClick()" >Resume <mat-icon>download</mat-icon></button>
+                    </mat-card-actions>
+                </div>
+            </mat-card-content>
+            
+        </mat-card>
+        <img fxFlex="0 1 250px" fxHide.xs class="avatar" src="assets/img/about-me.jpg" alt='avatar' data-holder-rendered="true"> 
+    </div>
+    <div class="center">
+        <app-qualification></app-qualification>
+    </div>
+    
+</div>

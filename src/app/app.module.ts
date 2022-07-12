@@ -1,25 +1,32 @@
+// @angular imports
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatIconModule } from '@angular/material/icon'
+import { MatCardModule } from '@angular/material/card'
+import { MatTabsModule } from '@angular/material/tabs'
+import { MatButtonModule } from '@angular/material/button'
+import { FlexLayoutModule } from '@angular/flex-layout'
+import { MatGridListModule } from '@angular/material/grid-list'
+
+// 3rd party imports
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { TimelineModule } from 'primeng/timeline'
+import { CardModule } from 'primeng/card'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { NavBarComponent } from './base-components/nav-bar/nav-bar.component'
 import { FooterComponent } from './base-components/footer/footer.component'
 import { HomeComponent } from './pages/home/home.component'
-import { MatButtonModule } from '@angular/material/button'
-import { MatIconModule } from '@angular/material/icon'
-import { MatCardModule } from '@angular/material/card'
-import { MatTabsModule } from '@angular/material/tabs'
 import { ProfileComponent } from './pages/home/profile/profile.component'
 import { PortfolioComponent } from './pages/home/portfolio/portfolio.component'
-import { MatGridListModule } from '@angular/material/grid-list'
 import { AboutMeComponent } from './pages/about-me/about-me.component'
 import { ContactMeComponent } from './pages/home/contact-me/contact-me.component'
-import { FlexLayoutModule } from '@angular/flex-layout'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons'
 import { PortfolioItemComponent } from './pages/home/portfolio/portfolio-item/portfolio-item.component'
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { TimelineComponent } from './base-components/timeline/timeline.component'
+import { QualificationComponent } from './pages/about-me/qualification/qualification.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +38,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     PortfolioComponent,
     AboutMeComponent,
     ContactMeComponent,
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    TimelineComponent,
+    QualificationComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +53,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     FlexLayoutModule,
     BrowserAnimationsModule,
     NgxBootstrapIconsModule.pick(allIcons),
-    NgbModule
+    NgbModule,
+    TimelineModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

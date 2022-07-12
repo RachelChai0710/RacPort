@@ -32,18 +32,4 @@ export class ProfileComponent implements OnInit {
       }
     }
   }
-
-  dnlFileOnClick() : void{
-    this.dnlFile();
-  }
-  
-  private dnlFile(): void{
-    let link = document.createElement('a');
-    link.setAttribute('type', 'hidden');
-    link.href = this.profile.resumePath;
-    link.download = this.profile.resumeName;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();  
-  }
 }

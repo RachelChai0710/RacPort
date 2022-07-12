@@ -1,0 +1,38 @@
+.about-me-container{
+    margin: 30px auto 30px auto;
+    background-color: var(--page-bg-color);
+    padding: 50px 20px 0px 20px;
+}
+
+.yoe-container{
+    width: 200px;
+}
+
+.yoe-container h1{
+    border-right: solid var(--primary-color) 2px ;
+    font-weight: bolder;
+}
+
+.yoe-container p{
+    text-align: start;
+    padding-left: 10px;
+}
+
+.avatar{
+    width: 250px;
+    height: 250px;
+    border: solid var(--img-border-color) 3px ;
+    padding:5px;
+}
+
+.dtl{
+    max-width: 400px;
+}
+
+.dtl p{
+    font-size: var(--h4-font-size);
+}
+
+.btn-icon{
+    margin-bottom: 10px;
+}
