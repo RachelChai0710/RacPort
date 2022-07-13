@@ -1,18 +1,24 @@
+
+
+.yoe-container{
+    width: 200px;
+}
+
+.yoe-container h1{
+    border-right: solid var(--primary-color) 2px ;
+    font-weight: bolder;
+}
+
+.yoe-container p{
+    text-align: start;
+    padding-left: 10px;
+}
+
 .avatar{
     width: 250px;
     height: 250px;
     border: solid var(--img-border-color) 3px ;
     padding:5px;
-}
-
-.name{
-    font-size: var(--h1-font-size);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.role{
-    font-size: var(--h2-font-size);
 }
 
 .dtl{
@@ -25,8 +31,4 @@
 
 .btn-icon{
     margin-bottom: 10px;
-}
-
-.mat-card-actions .btn-dnl{
-    margin-left: 5px;
 }

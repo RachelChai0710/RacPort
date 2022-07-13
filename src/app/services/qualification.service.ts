@@ -7,6 +7,7 @@ export interface Qualification{
   school: string;
   color: string;
   icon: string;
+  result?: string;
 }
 
 @Injectable({

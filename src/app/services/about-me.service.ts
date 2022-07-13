@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { AboutMeConstants } from '../pages/about-me/about-me.constants'
+import { AboutMeConstants } from '../pages/about-me/about-me-profile/about-me-profile.constants'
 
 export interface AboutMe{
   resumePath: string;

@@ -8,7 +8,6 @@ $font-family: 'Poppins', sans-serif;
 }
 
 :root{
-    --primary-color: #5F00A0;
     --secondary-color: #545454;
     --img-border-color: #663a82; 
     --btn-text-color: white;
@@ -17,7 +16,7 @@ $font-family: 'Poppins', sans-serif;
     --bg-color:#FFEFFF;
     --page-bg-color:rgba(255,255,255, 0.9);
 }
-
+ 
 /* Media Screen*/
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:320px)  { 
@@ -150,10 +149,20 @@ ul{
     list-style-type: none;
 }
 
+.mat-card-actions .mat-button {
+    background-color: var(--btn-unhover-color);
+    color: var(--btn-text-color);
+}
+
+.mat-card-actions .mat-button:hover {
+    background-color: var(--primary-color);
+    color: var(--btn-text-color);
+}
 /* class common style */
 .center{
     display: flex;
     justify-content: center;
+    max-width: 900px;
 }
 
 .btn-icon{
@@ -170,9 +179,9 @@ ul{
     color: var(--primary-color);
 }
 
-.column{
-    margin-right: 40px;
+.profile{
+    margin: 30px auto 80px auto;
+    padding: 50px 20px 0px 20px;
 }
-
 
 

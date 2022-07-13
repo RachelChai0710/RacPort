@@ -1,0 +1,23 @@
+<div class="skills-container">
+    <div class="center">
+        <mat-card class="mat-elevation-z0">
+            <mat-card-title align="center"><h1>Skills</h1></mat-card-title>
+        </mat-card>
+    </div>
+    
+    <div class="center">
+        <div fxLayout="row wrap"  fxLayout.xs="column" fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="20px" >
+            <mat-card fxFlex="40" class="mat-elevation-z0" align="center" *ngFor="let skill of skills">
+                <div fxLayout="row wrap">
+                    <mat-card-title fxFlex="90">{{skill.name}}</mat-card-title>
+                    <mat-card-subtitle fxFlex="10">{{skill.percentage}}</mat-card-subtitle>
+                </div>
+                <div class="progressBarStyle">
+                    <mat-progress-bar mode="determinate" [value]="skill.percentage" [color]="color" ></mat-progress-bar>
+                </div>
+            </mat-card>    
+        </div>
+    </div>
+    
+</div>
+

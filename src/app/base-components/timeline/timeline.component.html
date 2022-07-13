@@ -7,6 +7,7 @@
     </ng-template>
     <ng-template pTemplate="content" let-item>
         <p-card [header]="item.header" [subheader]="item.school">
+            <p *ngIf="item.result"> {{item.result}}</p>
             <p>{{item.date}}</p>
         </p-card>    
         

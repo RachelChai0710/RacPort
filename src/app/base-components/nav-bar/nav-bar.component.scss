@@ -2,6 +2,7 @@
     color: var(--secondary-color);
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .navbar-brand{
@@ -20,4 +21,9 @@
 
 li.nav-item.active:hover{
     color: var(--primary-color);
+}
+
+mat-card{
+    padding: 0px;
+    margin-bottom: 10px;
 }

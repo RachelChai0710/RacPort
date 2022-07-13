@@ -8,6 +8,7 @@ import { MatTabsModule } from '@angular/material/tabs'
 import { MatButtonModule } from '@angular/material/button'
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { MatGridListModule } from '@angular/material/grid-list'
+import { MatProgressBarModule } from '@angular/material/progress-bar'
 
 // 3rd party imports
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
@@ -27,6 +28,8 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons'
 import { PortfolioItemComponent } from './pages/home/portfolio/portfolio-item/portfolio-item.component'
 import { TimelineComponent } from './base-components/timeline/timeline.component'
 import { QualificationComponent } from './pages/about-me/qualification/qualification.component'
+import { SkillsComponent } from './pages/about-me/skills/skills.component';
+import { AboutMeProfileComponent } from './pages/about-me/about-me-profile/about-me-profile.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { QualificationComponent } from './pages/about-me/qualification/qualifica
     ContactMeComponent,
     PortfolioItemComponent,
     TimelineComponent,
-    QualificationComponent
+    QualificationComponent,
+    SkillsComponent,
+    AboutMeProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +55,7 @@ import { QualificationComponent } from './pages/about-me/qualification/qualifica
     MatCardModule,
     MatTabsModule,
     MatGridListModule,
+    MatProgressBarModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     NgxBootstrapIconsModule.pick(allIcons),
