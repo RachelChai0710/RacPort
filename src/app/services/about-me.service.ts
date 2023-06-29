@@ -6,7 +6,7 @@ export interface AboutMe{
   resumeName: string;
   dtl: string;
   startDt: Date;
-  yoe?: number;
+  yoe?: string;
 }
 
 @Injectable({
@@ -28,6 +28,6 @@ export class AboutMeService {
     const crrDt: Date = new Date()
     const monDiff = crrDt.getMonth() - this.aboutMe.startDt.getMonth()
     const yearDiff = crrDt.getFullYear() - this.aboutMe.startDt.getFullYear()
-    this.aboutMe.yoe = ((yearDiff * 12) + monDiff) / 12
+    this.aboutMe.yoe = (((yearDiff * 12) + monDiff) / 12).toFixed(2)
   }
 }
