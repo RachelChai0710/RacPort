@@ -5,7 +5,8 @@ export interface AboutMe{
   resumePath: string;
   resumeName: string;
   dtl: string;
-  yoe: number;
+  startDt: Date;
+  yoe?: number;
 }
 
 @Injectable({
@@ -19,6 +20,14 @@ export class AboutMeService {
   }
 
   getAboutMe () {
+    this.calYoe()
     return this.aboutMe
+  }
+
+  private calYoe () {
+    const crrDt: Date = new Date()
+    const monDiff = crrDt.getMonth() - this.aboutMe.startDt.getMonth()
+    const yearDiff = crrDt.getFullYear() - this.aboutMe.startDt.getFullYear()
+    this.aboutMe.yoe = ((yearDiff * 12) + monDiff) / 12
   }
 }

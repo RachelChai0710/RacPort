@@ -2,6 +2,7 @@ import { Skills } from 'src/app/services/skills.service'
 
 export class SkillsConstants {
   public static SKILL_ARR: Skills[] = [
+    { name: 'Java', percentage: 80 },
     { name: 'Angular', percentage: 80 },
     { name: 'C-family Programming', percentage: 80 },
     { name: 'HTML/CSS', percentage: 80 },
